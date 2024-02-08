@@ -17,11 +17,11 @@ public class Aplicacion {
 		for (int i = 0; i < productos.length; i++) {
 			System.out.println((i + 1) + ". " + productos[i] + " - Precio: $" + precios[i]);
 		}
-		System.out.println("Ingrese el numero del producto que desea comprar: ");
 	}
 	//Para comprar los productos seleccionados
 	public static void ComprarProductos() {
 		MostrarProductos();
+		System.out.println("Ingrese el numero del producto que desea comprar: ");
 		int opcion = Leer.datoInt();//recogemos un int y calculamos en base a la cantidad de productos
 		if (opcion < 1 || opcion > productos.length) {
 			System.out.println("Opcion invalida");
